@@ -2048,8 +2048,211 @@ coments */
 // console.log(sumN(3));
 // console.log(sumN(5));
 
+// https://www.codewars.com/kata/55f8a9c06c018a0d6e000132/train/javascript
 
-console.log('Hello');
+// function validatePIN (pin) {
+
+//     let str = pin.replace(/\s/g, "");
+
+//     if (pin !== str) return false
+
+//     pin = pin.trim().split('').map(a=>a*1)
+
+//     if ((pin.length === 4 || pin.length === 6) && !pin.includes(NaN)) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+
+// function validatePIN (pin) {
+
+//     var pinlen = pin.length;
+//     var isCorrectLength = (pinlen == 4 || pinlen == 6);
+//     var hasOnlyNumbers = pin.match(/^\d+$/);
+
+//     if(isCorrectLength && hasOnlyNumbers){
+//       return true;
+//     }
+
+//     return false;
+
+//   }
+
+// https://www.codewars.com/kata/5502c9e7b3216ec63c0001aa/train/javascript
+// function openOrSenior(arr) {
+//     let result = [];
+
+//     for (let i = 0; i < arr.length; i++) {
+//         const el = arr[i];
+
+//         if (el[0] >= 55 && 7 < el[1]) {
+//             result.push('Senior')
+//         } else {
+//             result.push('Open')
+//         }
+//     }
+
+//     return result
+// }
+
+
+// function openOrSenior(data) {
+//     return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open');
+// }
+
+// https://www.codewars.com/kata/56606694ec01347ce800001b/train/javascript
+// function isTriangle(a, b, c) {
+//     let result1;
+//     let result2;
+//     let result3;
+
+//     if (a + b > c) result1 = true;
+
+//     if (a + c > b) result2 = true;
+
+//     if (b + c > a) result3 = true
+//     else result3 = false;
+
+
+//     if (result1 == result2 && result1 == result3) return true
+//     else return false
+// }
+
+// function isTriangle(a, b, c) {
+//     return a + b > c && a + c > b && c + b > a;
+// }
+
+
+// https://www.codewars.com/kata/578553c3a1b8d5c40300037c/train/javascript
+// const binaryArrayToNumber = arr => parseInt(arr.join(''), 2);
+
+// https://www.codewars.com/kata/551f37452ff852b7bd000139/train/javascript
+// const addBinary = (a, b) => (a + b).toString(2);
+
+// https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d/train/javascript
+// const solution = (str, ending) => str.endsWith(ending)
+
+// https://www.codewars.com/kata/5949481f86420f59480000e7/train/javascript
+// function oddOrEven(arr) {
+//     if (arr.length === 0) return 'even'
+
+//     arr = arr.reduce((a, b) => a + b);
+
+//     if (arr % 2 === 0) return 'even'
+//     else return 'odd'
+// }
+
+// function oddOrEven(arr) {
+//     return arr.reduce((a, b) => a + b, 0) % 2 ? 'odd' : 'even';
+// }
+
+// https://www.codewars.com/kata/544aed4c4a30184e960010f4/train/javascript
+// function divisors(n) {
+//     let arr = []
+//     let result;
+
+//     for (let i = 2; i < n; i++) {
+//         if (n % i == 0) {
+//             arr.push(i)
+//         }
+//     }
+
+//     if (arr.length === 0) {
+//         return `${n} is prime`
+//     }
+
+//     return arr
+// };
+
+// https://www.codewars.com/kata/5259b20d6021e9e14c0010d4/train/javascript
+// function reverseWords(str) {
+//     str = str.split(' ');
+
+//     let result = [];
+
+//     for (let i = 0; i < str.length; i++) {
+//         result.push(str[i].split('').reverse().join(''))
+//     }
+
+//     return result.join(' ')
+// }
+
+// https://www.codewars.com/kata/555eded1ad94b00403000071/train/javascript
+// function SeriesSum(n) {
+//     if (n === 0) return '0.00'
+//     if (n === 1) return '1.00'
+
+//     let series = 4;
+//     let result = 1;
+
+//     for (let i = 1; i < n; i++) {
+
+//         let fix = 1;
+
+//         result += (fix / series);
+//         series += 3;
+//     }
+
+//     return result.toFixed(2)
+// }
+
+// https://www.codewars.com/kata/563cf89eb4747c5fb100001b/train/javascript
+// function removeSmallest(n) {
+//     let min = Math.min(...n);
+//     let skip = n.indexOf(min);
+//     let result = [];
+
+//     for (let i = 0; i < n.length; i++) {
+//         if (i === skip) continue
+
+//         result.push(n[i])
+//     }
+
+//     return result
+// }
+
+// https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9/train/javascript
+// const number = arr => arr.map((el, i) => `${i + 1}: ${el}`)
+
+// https://www.codewars.com/kata/559590633066759614000063/train/javascript
+// const minMax = arr => [Math.min(...arr), Math.max(...arr)]
+
+// https://www.codewars.com/kata/5813d19765d81c592200001a/train/javascript
+// function dontGiveMeFive(start, end) {
+//     let count = 0;
+
+//     for (i = start; i <= end; i++) {
+//         if ((i + '').split('').includes('5')) continue
+//         count++
+//     }
+
+//     return count
+// }
+
+// https://www.codewars.com/kata/57f609022f4d534f05000024/train/javascript
+function stray(arr) {
+    let max = Math.max(...arr)
+    let min = Math.min(...arr)
+
+    let more = [];
+    let less = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === max) more.push(arr[i])
+        if (arr[i] === min) less.push(arr[i])
+    }
+
+
+    if (more.length > less.length) return min
+    else return max
+}
+
+
+console.log(stray([1, 1, 2]));
+console.log(stray([1, 2, 1]));
+console.log(stray([2, 1, 1]));
+console.log(stray([555, -9600, 555]));
 
 
 
