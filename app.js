@@ -2229,38 +2229,3 @@ coments */
 
 //     return count
 // }
-
-// https://www.codewars.com/kata/57f609022f4d534f05000024/train/javascript
-function stray(arr) {
-    let max = Math.max(...arr)
-    let min = Math.min(...arr)
-
-    let more = [];
-    let less = [];
-
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === max) more.push(arr[i])
-        if (arr[i] === min) less.push(arr[i])
-    }
-
-
-    if (more.length > less.length) return min
-    else return max
-}
-
-
-console.log(stray([1, 1, 2]));
-console.log(stray([1, 2, 1]));
-console.log(stray([2, 1, 1]));
-console.log(stray([555, -9600, 555]));
-
-
-
-
-
-
-
-
-
-
-
