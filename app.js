@@ -2229,3 +2229,112 @@ coments */
 
 //     return count
 // }
+
+// function withoutRepeat(arr) {
+//     let result = [];
+
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] !== arr[i - 1] && arr[i] !== arr[i + 1]) {
+//             result.push(arr[i])
+//         }
+//     }
+
+//     return result
+// }
+
+// https://leetcode.com/problems/two-sum/
+// function twoSum(arr, needN) {
+//     let result = [];
+
+//     for (let i = 0; i < arr.length; i++) {
+
+//         for (let j = 0; j < i; j++) {
+//             if (arr[j] + arr[i] === needN) result.push(j, i)
+//         }
+//     }
+
+//     return result
+// }
+
+// https://www.codewars.com/kata/5264d2b162488dc400000001/train/javascript
+// function spinWords(str) {
+//     let arr = str.split(' ');
+//     let result = [];
+
+//     for (let i = 0; i < arr.length; i++) {
+
+//         if (arr[i].length < 5) {
+//             result.push(arr[i])
+//         } else {
+//             result.push(arr[i].split('').reverse().join(''))
+//         }
+
+//     }
+
+//     return result.join(' ')
+// }
+
+// https://www.codewars.com/kata/514b92a657cdc65150000006/train/javascript
+// function solution(n) {
+//     let result = 0;
+
+
+//     for (let i = 0; i < n; i++) {
+//         if (i % 3 === 0 || i % 5 === 0) {
+//             result += i
+//         }
+//     }
+
+//     if (result < 0) return 0
+
+//     return result
+// }
+
+// https://www.codewars.com/kata/54da5a58ea159efa38000836/train/javascript
+// function findOdd(arr) {
+//     let count = {};
+
+//     for (let elem of arr) {
+//         if (count[elem] === undefined) {
+//             count[elem] = 1;
+//         } else {
+//             count[elem]++;
+//         }
+//     }
+
+//     count = Object.entries(count)
+
+
+//     for (let i = 0; i < count.length; i++) {
+
+//         if (count[i][1] % 2 !== 0) return (+count[i][0]);;
+//     }
+// }
+
+// https://www.codewars.com/kata/541c8630095125aba6000c00/train/javascript
+// function digitalRoot(n) {
+//     // ...
+// }
+
+
+let n = 493193;
+
+
+let arr = (n + '').split('').map(Number);
+
+console.log(arr);
+
+let result = 0;
+
+
+// while ((result + '').length !== 0) {
+//     result += arr.reduce((a, b) => a + b)
+
+// }
+
+
+
+
+
+
+console.log(result);
