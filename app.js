@@ -2311,30 +2311,43 @@ coments */
 //     }
 // }
 
-// https://www.codewars.com/kata/541c8630095125aba6000c00/train/javascript
+// https://leetcode.com/problems/palindrome-number/
+// function isPalindrome(a) {
+//   a = (a + '')
+//   let b = (a + '').split('').reverse().join('');
+
+//   return a === b ? true : false
+// };
+
 // function digitalRoot(n) {
-//     // ...
+//   let first = n.toString().split('').map(Number).reduce((a, b) => a + b)
+//   let second = first.toString().split('').map(Number).reduce((a, b) => a + b)
+//   let threee = second.toString().split('').map(Number).reduce((a, b) => a + b)
+
+//   return threee
 // }
 
-
-let n = 493193;
-
-
-let arr = (n + '').split('').map(Number);
-
-console.log(arr);
-
-let result = 0;
-
-
-// while ((result + '').length !== 0) {
-//     result += arr.reduce((a, b) => a + b)
-
+// function digital_root(n) {
+//   return (n - 1) % 9 + 1;
 // }
 
+// function digital_root(n) {
+//   if (n < 10) return n;
 
+//   return digital_root(
+//     n.toString().split('').reduce(function (acc, d) { return acc + +d; }, 0));
+// }
 
+// https://www.codewars.com/kata/5831200eb812b8016d000094/train/javascript
+// const smartSum = (...n) => n.flat(Infinity).reduce((a, b) => a + b)
 
+// function makeItFunny(str, n) {
+//   let result = '';
 
+//   for (let i = 0; i < str.length; i++) {
+//     if ((i + 1) % n == 0) result += str[i].toUpperCase()
+//     else result += str[i]
+//   }
 
-console.log(result);
+//   return result
+// }
