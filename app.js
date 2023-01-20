@@ -2351,3 +2351,44 @@ coments */
 
 //   return result
 // }
+
+// function addTwoNumbers(l1, l2) {
+//   l1 = +l1.join('');
+//   l2 = +l2.join('');
+//   let sum = l1 + l2;
+
+//   return (sum + '').split('').map(Number).reverse()
+// };
+
+// function addTwoNumbers(l1, l2) {
+//   l1 = l1.reduce((a, b) => a + '' + b)
+//   l2 = l2.reduce((a, b) => a + '' + b)
+
+//   return ((+l1 + +l2) + '').split('').reverse().map(Number)
+// }
+
+
+// function addTwoNumbers(l1, l2) {
+//   return (+l1.join('') + +l2.join('')).toString().split('').reverse().map(Number)
+// };
+
+// https://leetcode.com/problems/length-of-last-word/
+// function lengthOfLastWord(s) {
+//   s = s.trim().split(' ')
+//   return s[s.length - 1].length
+// }
+
+
+// https://leetcode.com/problems/sqrtx/submissions/881769851/
+// const mySqrt = (x) => Math.floor(Math.sqrt(x))
+
+// https://leetcode.com/problems/contains-duplicate/submissions/881784234/
+// function containsDuplicate(arr) {
+//   arr.sort((a, b) => a - b);
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === arr[i + 1]) return true
+//   }
+
+//   return false
+// }
