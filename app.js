@@ -2392,3 +2392,6 @@ coments */
 
 //   return false
 // }
+
+https://leetcode.com/problems/single-number/
+const singleNumber = (nums) => nums.filter((el, i, arr) => arr.indexOf(el) === arr.lastIndexOf(el))
