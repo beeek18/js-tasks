@@ -2393,5 +2393,58 @@ coments */
 //   return false
 // }
 
-https://leetcode.com/problems/single-number/
-const singleNumber = (nums) => nums.filter((el, i, arr) => arr.indexOf(el) === arr.lastIndexOf(el))
+// https://leetcode.com/problems/single-number/
+// const singleNumber = (nums) => nums.filter((el, i, arr) => arr.indexOf(el) === arr.lastIndexOf(el))
+
+// https://www.codewars.com/kata/5526fc09a1bbd946250002dc/train/javascript
+// function findOutlier(arr){
+
+//   let even =[]
+//   let odd =[]
+  
+//   for(let i=0; i<arr.length; i++){ 
+//       if(arr[i]%2==0) even.push(arr[i])
+//       else if(arr[i]%2!=0) odd.push(arr[i])
+//   }
+//   if (even.length>odd.length) return +odd
+//   else return +even
+//   }
+  
+//   function findOutlier(int){
+//     var even = int.filter(a=>a%2==0);
+//     var odd = int.filter(a=>a%2!==0);
+//     return even.length==1? even[0] : odd[0];
+//   }
+
+// https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/javascript
+// function likes(names) {
+//     switch (names.length) {
+//         case 0: return "no one likes this"
+//         case 1: return `${names[0]} likes this`
+//         case 2: return `${names[0]} and ${names[1]} like this`
+//         case 3: return `${names[0]}, ${names[1]} and ${names[2]} like this`
+//         default: return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
+//     }
+// }
+
+// https://www.codewars.com/kata/525f50e3b73515a6db000b83/train/javascript
+// function createPhoneNumber(a) {
+//     return `(${a[0]}${a[1]}${a[2]}) ${a[3]}${a[4]}${a[5]}-${a[6]}${a[7]}${a[8]}${a[9]}`
+// }
+
+// "(123) 456-7890"
+
+// function createPhoneNumber(numbers) {
+//     var format = "(xxx) xxx-xxxx";
+
+//     for (var i = 0; i < numbers.length; i++) {
+//         format = format.replace('x', numbers[i]);
+//     }
+
+//     return format;
+// }
+
+// https://www.codewars.com/kata/526571aae218b8ee490006f4/train/javascript
+// function countBits(n) {
+//     return n.toString(2).replaceAll('0', '').length
+// }
