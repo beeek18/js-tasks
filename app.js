@@ -2401,15 +2401,15 @@ coments */
 
 //   let even =[]
 //   let odd =[]
-  
-//   for(let i=0; i<arr.length; i++){ 
+
+//   for(let i=0; i<arr.length; i++){
 //       if(arr[i]%2==0) even.push(arr[i])
 //       else if(arr[i]%2!=0) odd.push(arr[i])
 //   }
 //   if (even.length>odd.length) return +odd
 //   else return +even
 //   }
-  
+
 //   function findOutlier(int){
 //     var even = int.filter(a=>a%2==0);
 //     var odd = int.filter(a=>a%2!==0);
@@ -2447,4 +2447,72 @@ coments */
 // https://www.codewars.com/kata/526571aae218b8ee490006f4/train/javascript
 // function countBits(n) {
 //     return n.toString(2).replaceAll('0', '').length
+// }
+
+// https://www.codewars.com/kata/546f922b54af40e1e90001da/train/javascript
+// function alphabetPosition(str) {
+//     str = str.toLowerCase()
+
+//     const alp = 'abcdefghijklmnopqrstuvwxyz';
+//     let result = [];
+
+//     for (let i = 0; i < str.length; i++) {
+
+//         if (!alp.includes(str[i])) continue
+
+//         result.push(alp.indexOf(str[i]))
+//     }
+
+
+//     return result.map(el => el + 1).join(' ')
+// }
+
+// function alphabetPosition(text) {
+//     const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+
+//     return text.toLowerCase().replace(/[^a-z]/g, '').split('').map(x => alphabet.indexOf(x) + 1).join(' ');
+// }
+
+// https://www.codewars.com/kata/517abf86da9663f1d2000003/train/javascript
+// function toCamelCase(str) {
+//     if (!str) return ''
+
+//     str = str.split('_').join(' ').split('-').join(' ').split(' ')
+
+//     let res = []
+//     res.push(str[0])
+
+//     for (let i = 1; i < str.length; i++) {
+
+//         res.push(str[i][0].toUpperCase() + str[i].slice(1))
+//     }
+
+
+//     return res.join('')
+// }
+
+// https://www.codewars.com/kata/54e6533c92449cc251001667/train/javascript
+// function uniqueInOrder(str) {
+//     let result = []
+
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] !== str[i + 1]) result.push(str[i])
+//     }
+
+//     return result
+// }
+
+// https://www.codewars.com/kata/52597aa56021e91c93000cb0/train/javascript
+// function moveZeros(arr) {
+//   let withoutZero = arr.filter(el => el !== 0)
+//   let zero = arr.filter(el => el === 0)
+
+//   return withoutZero.concat(zero)
+// }
+
+// function moveZeros(arr) {
+//   return [
+//     ...(arr.filter(n => n !== 0)),
+//     ...(arr.filter(n => n === 0))
+//   ];
 // }
