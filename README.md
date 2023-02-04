@@ -1,7 +1,9 @@
-<h1>👨🏻‍💻  Tasks for practice 🧠 </h1>
+<h1>👨🏻‍💻  Tasks for practice 🧠 
 
-<li>Codewars</li>
-<li>LeetCode</li>
-<li>Elbrus Bootcamp</li>
-<li>Code Basics</li>
-<li>Learn JS</li>
+<h4>
+
+<li>Codewars
+<li>LeetCode
+<li>Elbrus Bootcamp
+<li>Code Basics
+<li>Learn JS
