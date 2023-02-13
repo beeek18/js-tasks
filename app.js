@@ -2516,3 +2516,21 @@ coments */
 //     ...(arr.filter(n => n === 0))
 //   ];
 // }
+
+// function countPositivesSumNegatives(arr) {
+//   if (arr === null || arr.length === 0) return []
+
+//   let countPos = 0
+//   let sumNeg = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0) {
+//       countPos++
+//     } else if (arr[i] < 0) {
+//       sumNeg.push(arr[i])
+//     }
+//   }
+//   sumNeg = sumNeg.reduce((a, b) => a + b, 0)
+
+//   return [countPos, sumNeg]
+// }
