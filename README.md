@@ -1,4 +1,4 @@
-<h1>👨🏻‍💻  Tasks for practice 🧠 
+<h1>👨🏻‍💻 Tasks for practice 🧠 
 
 <h4>
 
