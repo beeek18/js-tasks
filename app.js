@@ -2535,4 +2535,9 @@ coments */
 //   return [countPos, sumNeg]
 // }
 
-console.log('Hello World!');
+// https://www.codewars.com/kata/57be674b93687de78c0001d9
+// function largestPower(n) {
+//   let res = 0
+//   while (3 ** res < n) res++
+//   return res - 1
+// }
