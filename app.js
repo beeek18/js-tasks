@@ -2546,3 +2546,74 @@ coments */
 // function joinStrings(string1, string2){
 //   return `${string1} ${string2}`
 // }
+
+
+// https://edu.elbrusboot.camp/courses/en
+// function encrypt(str) {
+//   let result = '';
+
+//   for (let i = 0; i < str.length; i++) {
+//     const even = i % 2 === 0
+//     const odd = i % 2 !== 0
+
+//     if (even && i === str.length - 1) {
+//       result = `${result}${str[i]}`
+//     } else if (odd) {
+//       result = `${result}${str[i - 1]}`
+//     } else if (even) {
+//       result = `${result}${str[i + 1]}`
+//     }
+//   }
+
+//   return result
+// }
+
+// let str = 'go!'; //omev
+// console.log(encrypt(str));
+
+// https://www.codewars.com/kata/554ca54ffa7d91b236000023/solutions/javascript
+// function deleteNth(arr, n) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr.filter(el => el === arr[i]).length <= n) {
+//       result.push(arr[i])
+//     } else {
+//       arr.splice(arr.lastIndexOf(arr[i]), 1);
+//       i--;
+//     }
+//   }
+
+//   return result
+// }
+// console.log(deleteNth(arr, 2));
+
+// https://www.codewars.com/kata/580751a40b5a777a200000a1/train/javascript
+// function vowelOne(str) {
+//   let sib = 'aeiou'
+//   let resutl = '';
+
+//   for (let i = 0; i < str.length; i++) {
+//     if (sib.includes(str[i].toLowerCase())) { resutl += '1' }
+//     else { resutl += '0' }
+//   }
+
+//   return resutl
+// }
+
+// console.log(vowelOne('11111000'));
+
+// https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/javascript
+// function pigIt(str) {
+//   let arr = str.split(' ');
+//   let result = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] == '!' || arr[i] == '?' || arr[i] == ',' || arr[i] == '.') result.push(arr[i])
+//     else result.push(arr[i].split('').splice(1).join('') + arr[i].split('').splice(0, 1).join('') + 'ay');
+//   }
+
+//   return result.join(' ')
+// }
+
+// let str = 'Hello world !';
+
+// console.log(pigIt(str));
